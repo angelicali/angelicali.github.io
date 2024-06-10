@@ -60,11 +60,14 @@ h1 {
 .homepage.container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 20px 10%;
 }
 
 .homepage-block {
-    padding: 2%;
+    padding: 1%;
+    max-width: 400px;
+    line-height: 1.6em;
 }
 
 .subheading {
