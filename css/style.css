@@ -77,7 +77,7 @@ h1 {
 .quotes.container {
     border: 10px solid darksalmon;
     background-color: rgb(238, 185, 167);
-    margin: 20px 20px;
+    margin: 0px 20px 20px;
 
     display: flex;
     /* position: relative; */
@@ -108,7 +108,7 @@ span.quote-refresh:hover {
 }
 
 footer {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 /* .picture-box {
@@ -207,11 +207,14 @@ ul.project-list li {
 
 
 .emoji.container {
-    padding: 10px;
+    padding: 0;
     font-size: 70px;
-    margin: 10px 10px;
-    display: block;
+    margin: 0px 10px;
+    min-height: 100px;
+    display: flex;
     position: relative;
+    overflow-x: hidden;
+    align-items: center;
 }
 
 @keyframes walk {
