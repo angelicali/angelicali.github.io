@@ -1,0 +1,42 @@
+.zoo-box {
+    /* overflow:hidden; */
+    position: relative;
+    height: 95vh;
+    border: 5px black solid;
+    margin: 1%;
+    box-sizing: border-box;
+    /* background-color: rgba(81, 81, 81, 0.611); */
+    background-image: url('../images/zoo-field.jpg');
+
+}
+
+/* .zoo-bg {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+} */
+
+.animal {
+    position: absolute;
+    font-size: 50px;
+}
+
+.turtle {
+    top: 10%;
+    right: 20%;
+}
+
+.snail {
+    bottom: 40%;
+    left: 15%;
+}
+
+@media(max-width: 600px) {
+    .zoo-box{
+        margin: 0.1%;
+        border: black 3px solid;
+    }
+}

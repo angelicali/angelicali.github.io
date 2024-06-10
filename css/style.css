@@ -1,0 +1,260 @@
+body {
+    background-color: rgba(254, 168, 159, 0.164);
+    font: normal 16px Tahoma, sans-serif;
+    line-height: 1.3em;
+    padding: 0 2%;
+    overflow-x: hidden;
+}
+
+.clr {
+    clear:both;
+}
+
+.fixed {
+    position:fixed;
+}
+
+nav ul {
+    padding:0;
+    list-style: none;
+
+    display:flex; 
+    justify-content: center; /* horizontal align */
+    flex-wrap: wrap; 
+    align-content: center; /* vertical align for wrapping */
+    gap: 1em;
+}
+
+#main-header {
+    font-weight: 1000;
+    color: rgb(95, 61, 49);
+    letter-spacing: 0.01em;
+}
+
+nav a,
+nav a:visited {
+    /* margin-right: 10px; */
+    text-decoration-style: double;
+    text-decoration-line: overline;
+    color: rgb(140, 90, 73);
+}
+
+nav a:hover {
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+}
+
+nav a:active {
+    text-decoration-style: wavy;
+}
+
+h1 {
+    letter-spacing: 0.05em;
+    word-spacing: 0.2em;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.subheading {
+    text-align: center;
+}
+
+.quotes.container {
+    /* display: flex; */
+    border: 10px solid darksalmon;
+    background-color: rgb(238, 185, 167);
+    margin: 0 20px;
+    justify-content: center;
+}
+
+.quote{
+    text-align: center;
+}
+.quote-refresh {
+    margin-left: 5%;
+}
+
+.quote-refresh:hover {
+    cursor: pointer;
+}
+
+footer {
+    display:block;
+}
+
+.homepage-block {
+    float:left;
+    width: 33.3%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.picture-box {
+    border: 5px skyblue solid;
+    border-bottom-style: groove;
+    border-bottom-width: 10px;
+
+    background-color: rgb(223, 237, 243);
+
+    padding: 20px;
+    margin: 5px 20px;
+}
+
+#picture-button {
+    display: block;
+    margin-left: 42%;
+}
+
+ul.project-list {
+    padding: 0;
+    list-style: none;
+}
+
+ul.project-list li {
+    border-bottom: dotted 1px grey;
+
+}
+
+.project-block {
+    float:left;
+    width: 70%;
+}
+
+.project-sidebar {
+    float:right;
+    width:30%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+
+.contact-form {
+    padding: 20px;
+}
+
+.contact-form .form-group {
+    padding-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    padding: 3px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.contact-form textarea {
+    padding: 3px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: darksalmon;
+    color: black;
+    padding: 5px 10px;
+
+    /* TODO: can I add animation?? */
+    border-style: dotted;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 20px;
+}
+
+.contact-form input[type="submit"]:hover{
+    border-style: solid;
+}
+
+.hi-line {
+    position: relative;
+}
+#hi-button {
+    position: absolute;
+    left: 100px;
+}
+
+
+.emoji.container {
+    padding: 10px;
+    font-size: 70px;
+    margin: 10px 10px;
+    display: block;
+    position:relative;
+}
+
+@keyframes walk {
+    from {
+        left: 120%;
+    }
+
+    to {
+        left:-80%;
+    }
+}
+
+.emoji .animal {
+    /* animation: 15s linear 1s infinite alternate walk; */
+    /* border: solid 2px black; */
+    position:relative;
+    left: 120%;
+    
+    /* animation */
+    animation-delay: 1s;
+    animation-name: walk;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.turtle {
+    animation-duration: 60s;
+}
+
+.bunny {
+    animation-duration: 40s;
+}
+
+.snail {
+    animation-duration: 100s;
+}
+
+.rat {
+    animation-duration: 20s;
+}
+
+#zoo-link {
+    text-decoration: none;
+}
+
+.plant-container {
+    left: 60%;
+    bottom: 0;
+    width: 40%;
+    height: 100px;
+    /* box-sizing: border-box; */
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+} 
+
+.plant-container:hover{
+    cursor: default;
+}
+
+.plant {
+    font-size: 40px;
+    transition: 3s;
+    height: 50px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.plant:hover {
+    font-size: 50px;    
+}
