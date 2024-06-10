@@ -7,32 +7,28 @@ body {
 }
 
 .clr {
-    clear:both;
+    clear: both;
 }
 
 .fixed {
-    position:fixed;
+    position: fixed;
 }
 
-nav ul {
-    padding:0;
-    list-style: none;
+nav {
+    padding: 0;
 
-    display:flex; 
-    justify-content: center; /* horizontal align */
-    flex-wrap: wrap; 
-    align-content: center; /* vertical align for wrapping */
+    display: flex;
+    justify-content: center;
+    /* horizontal align */
+    flex-wrap: wrap;
+    align-content: center;
+    /* vertical align for wrapping */
     gap: 1em;
 }
 
-#main-header {
-    font-weight: 1000;
-    color: rgb(95, 61, 49);
-    letter-spacing: 0.01em;
-}
 
-nav a,
-nav a:visited {
+nav .nav-item,
+nav .nav-item:visited {
     /* margin-right: 10px; */
     text-decoration-style: double;
     text-decoration-line: overline;
@@ -48,6 +44,12 @@ nav a:active {
     text-decoration-style: wavy;
 }
 
+#main-header {
+    font-weight: 1000;
+    color: rgb(95, 61, 49);
+    letter-spacing: 0.01em;
+}
+
 h1 {
     letter-spacing: 0.05em;
     word-spacing: 0.2em;
@@ -55,41 +57,58 @@ h1 {
     text-align: center;
 }
 
+.homepage.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 10%;
+}
+
+.homepage-block {
+    padding: 2%;
+}
+
 .subheading {
     text-align: center;
 }
 
 .quotes.container {
-    /* display: flex; */
     border: 10px solid darksalmon;
     background-color: rgb(238, 185, 167);
-    margin: 0 20px;
-    justify-content: center;
+    margin: 20px 20px;
+
+    display: flex;
+    /* position: relative; */
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.quote{
+div.quote {
+    flex-grow: 1;
+    /* position: absolute; */
     text-align: center;
-}
-.quote-refresh {
-    margin-left: 5%;
+    width: 100%;
+    padding: 0.5% 1%;
 }
 
-.quote-refresh:hover {
+div.quote-refresh {
+    /* position: absolute;
+    right: 5%;
+    top: 50%;
+    width: 5%;
+    text-align: center; */
+    display: inline;
+    min-width: 5%;
+}
+
+span.quote-refresh:hover {
     cursor: pointer;
 }
 
 footer {
-    display:block;
+    margin-top: 20%;
 }
 
-.homepage-block {
-    float:left;
-    width: 33.3%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.picture-box {
+/* .picture-box {
     border: 5px skyblue solid;
     border-bottom-style: groove;
     border-bottom-width: 10px;
@@ -98,11 +117,15 @@ footer {
 
     padding: 20px;
     margin: 5px 20px;
-}
+} */
 
-#picture-button {
+/* #picture-button {
     display: block;
     margin-left: 42%;
+} */
+
+#main-pic {
+    border: 5px solid rgb(140, 90, 73);
 }
 
 ul.project-list {
@@ -116,13 +139,13 @@ ul.project-list li {
 }
 
 .project-block {
-    float:left;
+    float: left;
     width: 70%;
 }
 
 .project-sidebar {
-    float:right;
-    width:30%;
+    float: right;
+    width: 30%;
     border: 2px solid black;
     box-sizing: border-box;
     padding: 15px;
@@ -166,13 +189,14 @@ ul.project-list li {
     border-radius: 20px;
 }
 
-.contact-form input[type="submit"]:hover{
+.contact-form input[type="submit"]:hover {
     border-style: solid;
 }
 
 .hi-line {
     position: relative;
 }
+
 #hi-button {
     position: absolute;
     left: 100px;
@@ -184,7 +208,7 @@ ul.project-list li {
     font-size: 70px;
     margin: 10px 10px;
     display: block;
-    position:relative;
+    position: relative;
 }
 
 @keyframes walk {
@@ -193,16 +217,16 @@ ul.project-list li {
     }
 
     to {
-        left:-80%;
+        left: -80%;
     }
 }
 
 .emoji .animal {
     /* animation: 15s linear 1s infinite alternate walk; */
     /* border: solid 2px black; */
-    position:relative;
+    position: relative;
     left: 120%;
-    
+
     /* animation */
     animation-delay: 1s;
     animation-name: walk;
@@ -237,13 +261,13 @@ ul.project-list li {
     width: 40%;
     height: 100px;
     /* box-sizing: border-box; */
-    
+
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-} 
+}
 
-.plant-container:hover{
+.plant-container:hover {
     cursor: default;
 }
 
@@ -256,5 +280,5 @@ ul.project-list li {
 }
 
 .plant:hover {
-    font-size: 50px;    
+    font-size: 50px;
 }

@@ -6,153 +6,72 @@
     <meta name="description" content="Angelica Li's home page">
     <meta name="keywords" content="Angelica Li, Yunshu Li, angelica li philosophy, angelica li google">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script>
-        function randomIntFromInterval(min, max) { // min and max included 
-            return Math.floor(Math.random() * (max - min + 1) + min);
-        }
-
-        const hiList = ["Hi", "你好", "Shalom", "Hola", "Bonjour", "Salam", "Ciao", "Namaste"];
-        function updateHi() {
-            const hiElem = document.getElementById("hi-text");
-            const hiText = hiElem.textContent;
-            const hiIndex = hiList.indexOf(hiText);
-            const newHiIndex = (hiIndex + 1) % hiList.length;
-            hiElem.textContent = hiList[newHiIndex];
-        }
-
-        const quotes = [
-            {
-                quote: "Love is composed of a single soul inhabiting two bodies.",
-                author: "Aristotle"
-            },
-            {
-                quote: "To live is the rarest thing in the world. Most people exist, that is all.",
-                author: "Oscar Wilde"
-            },
-            {
-                quote: "Because once the lie had been allowed in, it led a life of its own and everything took its bearings by it.",
-                author: "Milan Kundera"
-            }
-        ]
-        function setRandomQuote() {
-            const randomIdx = randomIntFromInterval(0, quotes.length - 1);
-            const randomQuote = quotes[randomIdx];
-            document.getElementById("quote").textContent = randomQuote.quote;
-            document.getElementById("quote-author").textContent = randomQuote.author;
-        }
-
-        const flowerList = ["&#127803;", "&#127799;"];
-
-    </script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
     <nav>
-        <ul>
-            <li id="main-header">
-                Angelica's website
-            </li>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="projects.html">Toy Projects</a>
-            </li>
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact Me</a>
-            </li>
-        </ul>
+        <a id="main-header">Angelica's website</a>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="projects.html">Projects</a>
+        <!-- <a class="nav-item" href="blog.html">Blog</a> -->
+        <!-- <a class="nav-item" href="contact.html">Contact Me</a> -->
     </nav>
     <main>
         <h1>Home Page</h1>
-        <h4 class="subheading">A place for me to work out my narrative...</h4>
+        <!-- <h4 class="subheading">A place for me to work out my narrative...</h4> -->
 
-        <a id="zoo-link" href="zoo.html">
+        <!-- <a id="zoo-link" href="zoo.html"> -->
             <div class="container emoji">
-                <!-- TODO: make them move at different speed -->
-                <!-- <span class="emoji"> &#128029; &#128012; &#128039;</span> -->
                 <span class="animal turtle">&#128034; </span>
                 <span class="animal bunny">&#128007;</span>
                 <span class="animal snail">&#128012; </span>
                 <span class="animal rat">&#128000;</span>
             </div>
-        </a>
-
+        <!-- </a> -->
 
 
 
         <div class="container quotes">
-            <p class="quote"><q id="quote">Love is composed of a single soul inhabiting two bodies.</q> - 
-                <span id="quote-author">Aristotle</span> <span class="quote-refresh" onclick="setRandomQuote();">&#128472;</span> </p>
-
+            <div class="quote">
+                <p><q id="quote">Unlike stories, real life, when it has passed, inclines toward obscurity, not clarity.</q> -
+                <span id="quote-author">Elena Ferrante</span> </p>
+            </div>
+            <div class="quote-refresh">
+                <span class="quote-refresh"
+                onclick="setRandomQuote();">&#128472;</span>
+            </div>
         </div>
-
-
-
-        <div class="container">
-            <div class="picture-box">
-                <a href="images/flight.jpg"><img src="images/flight.jpg" alt="A picture of me and my husband"
+        <div class="homepage container">
+            <div class="homepage-block">
+                <a href="images/flight.jpg"><img id="main-pic" src="images/flight.jpg" alt="A picture of me and my husband"
                         height=200px></a>
-                <a href="images/chinese-wedding.jpg"><img src="images/chinese-wedding.jpg"
-                        alt="A picture of me and my husband" height=200px></a>
             </div>
-            <button id="picture-button">More pictures?</button>
-        </div>
+            <div class="homepage-block">
 
-        <article>
-            <div class="homepage-block">
-                <!-- Change the language on click -->
                 <p class="hi-line"> <span id="hi-text">Hi</span> <button id="hi-button"
-                        onclick="updateHi();">Hi</button> </p>
-                <p> My name is Angelica Li (aka 李云舒). I bla bla bla...</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, repellendus animi ipsa accusamus
-                    nam earum esse exercitationem autem, fugiat, optio delectus aliquid vero nesciunt eos voluptatum
-                    voluptate temporibus! Odit, pariatur?
-                    Dicta, repudiandae nulla officia enim laborum atque. Id ad commodi quas labore vel voluptates natus
-                    cumque molestiae dolor distinctio, tenetur nulla eius praesentium adipisci cum! Quidem voluptatem
-                    eum at maiores.</p>
+                        onclick="setRandomHi();">Say Hi</button> </p>
+                <p> My name is Angelica Li (aka 李云舒). I ... To be finished!</p>
             </div>
-            <div class="homepage-block">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, deleniti officia, perferendis
-                    repellat non beatae sit officiis modi rerum omnis excepturi cupiditate error tempore eos natus
-                    voluptatum eum reprehenderit numquam!
-                    Maiores deleniti modi reprehenderit quod. Magnam eius autem veniam dolorum perferendis blanditiis
-                    explicabo, iste nisi tempora odio commodi consequuntur velit ipsum sapiente veritatis. Odio vero hic
-                    temporibus nostrum eius ea?
-                    Modi, culpa. Aliquam repellat eum autem, atque nam id voluptatem expedita inventore amet, nostrum,
-                    ipsam quis rem assumenda voluptates quod excepturi veniam distinctio minima odit veritatis.
-                    Expedita, quis? Distinctio, a!</p>
-            </div>
-            <div class="homepage-block">
-                <p>I hope to learn more Hebrew words in the years to come. (Shalom! Ani ohevet baali!)</p>
-            </div>
-        </article>
+        </div>
     </main>
     <div class="clr"></div>
-    <footer>
-        <div class="fixed plant-container">
-            <!-- pick a random plant on refresh -->
-            <div class="plant" name="sunflower">&#127803;</div>
-            <div class="plant" name="sunflower">&#127803;</div>
-            <div class="plant" name="sunflower">&#127803;</div>
-            <div class="plant" name="sunflower">&#127803;</div>
-            <div class="plant" name="sunflower">&#127803;</div>
-            <!-- <span class="plant" name="tree">&#127795;</span> 
-            <span class="plant">&#127793;</span>
-            <span class="plant" name="tulip">&#127799;</span> -->
-        </div>
+
+    <div class="fixed plant-container">
+        <div class="plant" name="sunflower">&#127803;</div>
+        <div class="plant" name="sunflower">&#127803;</div>
+        <div class="plant" name="sunflower">&#127803;</div>
+        <div class="plant" name="sunflower">&#127803;</div>
+        <div class="plant" name="sunflower">&#127803;</div>
+    </div>
+
+    <!-- <footer>    
         <p># visits here</p>
         <p>Copyright &copy; 2024 My website</p>
-    </footer>
+    </footer> -->
 
 
 
-    <script>
-        setRandomQuote();
-    </script>
 </body>
 
 </html>
