@@ -18,10 +18,10 @@ const quotes = [
         quote: "Because once the lie had been allowed in, it led a life of its own and everything took its bearings by it.",
         author: "Milan Kundera"
     },
-    {
-        quote: "The flower that blooms in adversity is the rarest and most beautiful of all.",
-        author: "Mulan"
-    },
+    // {
+    //     quote: "The flower that blooms in adversity is the rarest and most beautiful of all.",
+    //     author: "Mulan"
+    // },
     {
         quote: "There is nothing like staying at home for real comfort.",
         author: "Jane Austen"
