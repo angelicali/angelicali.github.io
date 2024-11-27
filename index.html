@@ -11,26 +11,15 @@
 
 <body>
     <nav>
-        <a id="main-header">Angelica's website</a>
-        <a class="nav-item" href="index.html">Home</a>
-        <a class="nav-item" href="projects.html">Projects</a>
-        <a class="nav-item" href="blog.html">Blog</a>
-        <!-- <a class="nav-item" href="contact.html">Contact Me</a> -->
+        <span id="main-header">Angelica's <s>website</s> zoo-garden</span>
     </nav>
     <main>
-        <h1>Home Page</h1>
-        <!-- <h4 class="subheading">A place for me to work out my narrative...</h4> -->
-
-        <!-- <a id="zoo-link" href="zoo.html"> -->
         <div class="container emoji">
             <span class="animal turtle">&#128034; </span>
             <span class="animal bunny">&#128007;</span>
             <span class="animal snail">&#128012; </span>
             <span class="animal rat">&#128000;</span>
         </div>
-        <!-- </a> -->
-
-
 
         <div class="container quotes">
             <div class="quote">
@@ -44,18 +33,48 @@
             </div>
         </div>
         <div class="homepage container">
-            <div class="homepage-block">
+            <div id="photo">
                 <a href="images/flight.jpg"><img id="main-pic" src="images/flight.jpg"
                         alt="A picture of me and my husband" height=200px></a>
             </div>
-            <div class="homepage-block">
-
-                <p class="hi-line"> <span id="hi-text">Hi</span> <button id="hi-button" onclick="setRandomHi();">Say
-                        Hi</button> </p>
-                <p> My name is Angelica Li (aka 李云舒). I'm a software engineer and philosopher. I have a B.S. in Computer
-                    Science from UIUC and a M.A. in Philosophy from Texas Tech. Between these two degrees I was a
-                    software engineer at Google for 2 years, where I worked on audience targeting for YouTube Ads.</p>
-            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>these days...</h4>
+                        <p> I <a href="https://kitty-cam.vercel.app">feed cats</a> and I'm getting ready to join <a href="https://pomelocare.com/">Pomelo</a> </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>2024</h4>
+                        <p> I <a href="images/wedding.png">married</a> <a href="https://ilanb.xyz/">ilan</a> (<a href="https://youtu.be/ifgYj8itWiA">twice</a>)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>2022 - 2024</h4>
+                        <p> I studied <a href="">philosophy at Texas Tech</a></p>
+                        <p> You wonder <a href="writing/why-philosophy.html">why?</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>2019 - 2022</h4>
+                        <p> I was a software engineer at Google</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>2015 - 2019</h4>
+                        <p> I studied computer science at UIUC</p>
+                    </div>
+                </div>
+           </div>
         </div>
     </main>
     <div class="clr"></div>
@@ -67,11 +86,6 @@
         <div class="plant" name="sunflower">&#127803;</div>
         <div class="plant" name="sunflower">&#127803;</div>
     </div>
-
-    <!-- <footer>     -->
-        <!-- <p>Copyright &copy; 2024 My website</p> -->
-        <!-- <img src="https://komarev.com/ghpvc/?username=angelicali&label=Visitor+Count&color=fc9a9a" /> -->
-    <!-- </footer> -->
 </body>
 
 </html>
