@@ -18,10 +18,6 @@ const quotes = [
         quote: "Because once the lie had been allowed in, it led a life of its own and everything took its bearings by it.",
         author: "Milan Kundera"
     },
-    // {
-    //     quote: "The flower that blooms in adversity is the rarest and most beautiful of all.",
-    //     author: "Mulan"
-    // },
     {
         quote: "There is nothing like staying at home for real comfort.",
         author: "Jane Austen"
@@ -44,18 +40,18 @@ const quotes = [
     },
     {
         quote: "Life can only be understood backwards; but it must be lived forwards.",
-        author: "Søren Kierkegaard"
+        author: "Soren Kierkegaard"
     },
     {
         quote: "People demand freedom of speech as a compensation for the freedom of thought which they seldom use.",
-        author: "Søren Kierkegaard"
+        author: "Soren Kierkegaard"
     },
     {
         quote: "Anxiety is the dizziness of freedom.",
-        author: "Søren Kierkegaard"
+        author: "Soren Kierkegaard"
     }, {
         quote: "What labels me, negates me.",
-        author: "Søren Kierkegaard"
+        author: "Soren Kierkegaard"
     },
     {
         quote: "You can discover more about a person in an hour of play than in a year of conversation.",
